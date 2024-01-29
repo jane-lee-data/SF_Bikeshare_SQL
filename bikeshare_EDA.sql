@@ -33,7 +33,6 @@ FROM trip
 ORDER BY duration DESC
 LIMIT 10;
 
-
 -- day with the highest no. of trips: 2014-09-15, 1491 trips
 SELECT DATE(start_date) AS date, COUNT(*) AS trips
 FROM trip
@@ -69,7 +68,6 @@ FROM trip
 GROUP BY end_station_name
 ORDER BY trips DESC
 LIMIT 10;
-
 
 -- top 10 ride courses (start-end combination)
 SELECT
