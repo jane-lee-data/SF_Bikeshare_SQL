@@ -1,8 +1,5 @@
-# SF_Bikeshare_SQL
-San Francisco Bike Share - SQL Project
-
-## Project Introduction
-This project looks into San Francisco Bay Area Bike Share Data using MySQL to analyze usage patterns and user behaviors for different contexts.
+# SF Bay Area Bikeshare Data Analysis (SQL)
+This project looks into a bike share data using MySQL to analyze usage patterns and user behaviors for different contexts.
 
 ## Data
 [SF Bay Area Bike Share](https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share) by Ben Busath on Kaggle, anonymized data from August 2013 to August 2015.
