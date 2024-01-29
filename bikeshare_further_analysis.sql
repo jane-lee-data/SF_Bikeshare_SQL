@@ -29,6 +29,7 @@ SELECT
     END) AS charge
 FROM trip;
 
+
 /*
     Suppose a different pricing model.
      Subscriber: free for the first 30 minutes, $0.20 per minute afterwards.
