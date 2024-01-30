@@ -1,6 +1,6 @@
 # SF Bay Area Bikeshare Data Analysis (SQL)
-This project looks into a bike share data using MySQL to analyze usage patterns and user behaviors for different contexts.
-[Tableau Dashboard](https://public.tableau.com/views/SFBikeShare_17065621499340/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+This project looks into a bike share data using MySQL to analyze usage patterns and user behaviors for different contexts.  
+[Link to Tableau Dashboard](https://public.tableau.com/views/SFBikeShare_17065621499340/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ### Data
 [SF Bay Area Bike Share](https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share) by Ben Busath on Kaggle, anonymized data from August 2013 to August 2015.
