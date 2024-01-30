@@ -29,7 +29,6 @@ SELECT
     END) AS charge
 FROM trip;
 
-
 /*
     Suppose a different pricing model.
      Subscriber: free for the first 30 minutes, $0.20 per minute afterwards.
@@ -109,10 +108,24 @@ FROM rankings_day
 WHERE rankings <= 3
 ORDER BY day_of_week, rankings;
 
+-- avg number of trips for certain hour in certain day of week
+SELECT
+    DAYOFWEEK(start_date) AS day_of_week,
+    HOUR(start_date) AS hour_of_day,
+    COUNT(*) / COUNT(DISTINCT DATE(start_date)) AS avg_trips
+FROM
+    trip
+GROUP BY
+    DAYOFWEEK(start_date), HOUR(start_date)
+ORDER BY
+    day_of_week, hour_of_day;
 
--- total number of trips on days depending on weather events
--- Least number of trips for rain-thunderstorm, followed by fog-rain.
-SELECT w.events, AVG(t.duration) AS avg_duration, COUNT(*) AS trips
+/*
+    Average number of trips on days depending on weather events
+    Least number of trips for rain-thunderstorm, followed by fog-rain.
+ */
+
+SELECT w.events, AVG(t.duration/60) AS avg_duration_min, COUNT(*)/COUNT(DISTINCT t.start_date) AS trips
 FROM trip t
 INNER JOIN weather w
 ON DATE(t.start_date) = w.date
